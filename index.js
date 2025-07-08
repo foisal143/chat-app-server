@@ -26,6 +26,10 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get('/',(req,res)=>{
+    res.json('chat application is running')
+})
+
 server.listen(5000, () => {
   console.log("Server running on port 5000");
 });
